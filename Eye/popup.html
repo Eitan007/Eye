@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disc Watch</title>
+    <link rel="stylesheet" href="./popup.css">
+</head>
+<body>
+    <div class="gg1">
+        <label for="server">Server Name</label>
+        <input id="server" type="text">
+        
+        <label for="link">Invite Link</label>
+        <input id="link" type="text">
+        
+        <label for="webhook">Webhook</label>
+        <input id="webhook" type="text">
+        
+        <label for="speed">Scan Speed</label>
+        <input id="speed" type="number" value="1700" min="1000" max="2000" placeholder="(1000 - 2000 px)">
+        
+        <label for="guild">Update Check</label>
+        <input id="guild" type="number" value="5" placeholder="(in mins)">
+    </div>
+    <div class="ggg">
+        <div class="primary">
+            <button id="start">START</button>
+            <button id="stop">STOP</button>
+            <button id="train">TRAIN</button>
+        </div>
+        <div class="secondary">
+            <button id="register">REGISTER</button>
+            <button id="inject">INJECT</button>
+        </div>
+    </div>
+    <script src="./popup.js"></script>
+</body>
+</html>

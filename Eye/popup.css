@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Base styles */
+body {
+  font-weight: 500;
+    font-family: Roboto;
+    margin: 0;
+    padding: 1rem;
+    background-color: #00002B; /* Indigo base color */
+    color: #fff; /* White text color */
+  }
+  /* Class for buttons */
+  .ggg {
+    margin-bottom: 2rem;
+  }
+  /* Class for inputs */
+  .gg1 {
+    padding-bottom: 1rem;
+  }
+  .primary {
+    padding-bottom: 0.5rem;
+  }
+  /* Buttons */
+  button {
+    background-color: #00002B;/*  Lighter indigo */
+    border: #5cfa7c 2px solid;
+    box-sizing: border-box;
+    padding: 0.2rem 0.3rem; /* Reduce padding to a smaller size */
+/*    padding: 0.5rem 1rem;*/
+    border-radius: 20px;
+    font-size: 12px;
+    color: #ffff;
+    font-family: Roboto;
+    font-weight: 500;
+    display: flex; /* Enable flexbox for stacking */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center text horizontally */
+    justify-content: center; /* Center text vertically within the button */
+    cursor: pointer;
+    margin: 0 0 0 0.2rem;
+    transition: box-shadow 0.2s ease-in-out; /* Smooth transition for glow */
+  }
+  
+
+  button span {
+    margin: 0; /* Remove default margin on spans */
+  }
+  
+
+
+
+  button:hover {
+    box-shadow: 0 0 5px white; /* White glow on hover */
+    background-color: #5cfa7c;
+    color: #00002B;
+  }
+  
+  button:active {
+    box-shadow: 0 0 3px #9457D4; /* Lighter indigo glow on click */
+  }
+  
+  /* Input bars */
+  input[type="text"], input[type="number"] {
+    background-color: #33005A; /* Darker indigo */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #5cfa7c; /* Neon Green text color */
+    margin-right: 1rem;
+  }
+  /* All Placeholders */
+  ::placeholder {
+    font-family: Roboto;
+    color: #9e8e8e;
+    font-weight: 500;
+  }
+  /* Layout */
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 120px; /* Consistent width for labels */
+  }
+  
+  .button-row {
+    display: flex; /* Arrange buttons in a row */
+  }
+
+
+/* Layout */
+.primary,
+.secondary {
+  display: flex; /* Arrange buttons in a row */
+}
+
+.primary button,
+.secondary button {
+  margin-right: 0; /* Remove margin-right for buttons within the same row */
+}
+  
